@@ -6,15 +6,15 @@
 <style>
   body {
     margin: 0;
-    background-color: black;   /* black edges */
+    background-color: black;   /* black bars on left and right */
     font-family: Georgia;
   }
 
   .container {
     width: 1200px;
     height: 100vh;
-    margin: 0 auto;            /* center horizontally */
-    background-color: #3b3b3b; /* gray middle */
+    margin: 0 auto;             /* center the gray section */
+    background-color: #3b3b3b; /* main background (dark gray) */
     position: relative;
     color: #e8e2d8;
   }
@@ -27,7 +27,7 @@
 <body>
 
   <div class="container">
-
+    <!-- Profile picture (top-right corner) -->
     <img src="drone.jpg" style="
       position:absolute;
       top:30px;
@@ -38,15 +38,15 @@
     ">
 
 
-
-    <div style="     /* the text below profile */
-  position:absolute;
-  top:300px;
-  right:40px;
-  width:300px;
-  font-size:18px;
-  line-height:1.5;
-">
+    <!-- Text block under profile picture (right side info) -->
+    <div style="     
+      position:absolute;
+      top:300px;
+      right:40px;
+      width:300px;
+      font-size:18px;
+      line-height:1.5;
+    ">
 
   <p>
     Mechanical Engineering Student<br>
@@ -64,6 +64,7 @@
 
 </div>
 
+    <!-- Main title (center of page) -->
     <h1 style="
       position:absolute;
       top:39%;
