@@ -6,28 +6,31 @@
 <style>
   body {
     margin: 0;
-    background-color: black;   /* black bars on left and right */
+    background-color: black;
     font-family: Georgia;
   }
 
   .container {
     width: 1200px;
-    min-height: 900px;   
-    margin: 0 auto;             /* center the gray section */
-    background-color: #3b3b3b; /* main background (dark gray) */
+    min-height: 900px;
+    margin: 0 auto;
+    background-color: #3b3b3b;
     position: relative;
     color: #e8e2d8;
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
 </style>
 
-
-  
 </head>
 
 <body>
 
   <div class="container">
-    <!-- Profile picture (top-right corner) -->
+
+    <!-- Profile picture -->
     <img src="drone.jpg" style="
       position:absolute;
       top:30px;
@@ -37,99 +40,102 @@
       border:4px solid #e8e2d8;
     ">
 
-  <!-- PPROJECTS buttion -->
- <a href="#projects" style="
-  position:absolute;
-  top:100px;
-  left:240px;
-   color:#4da6ff;   
-  font-size:80px;
-  font-weight:bold;
-  text-decoration:underline;
-  letter-spacing:2px;
-">
-  PROJECTS
-</a>
-  
+    <!-- PROJECTS button -->
+    <a href="#projects" style="
+      position:absolute;
+      top:100px;
+      left:240px;
+      color:#4da6ff;
+      font-size:80px;
+      font-weight:bold;
+      text-decoration:underline;
+      letter-spacing:2px;
+    ">
+      PROJECTS
+    </a>
 
+    <!-- Main title -->
+    <h1 style="
+      position:absolute;
+      top:240px;
+      left:50%;
+      transform:translateX(-50%);
+      font-size:56px;
+      font-weight:400;
+      letter-spacing:5px;
+      white-space: nowrap;
+      color:#d6d0c5;
+      font-family: Georgia, serif;
+      margin:0;
+      line-height:1.2;
+    ">
+      PORTFOLIO – DUC HOANG
+    </h1>
 
-  <!-- LEFT IMAGE here -->
-  <img src="mechanical.jpg" style="
-    position:absolute;
-    top:370px;
-    left:80px;
-    width:700px;
-    height:auto;
-    border-radius:8px;
-    border:4px solid #e8e2d8;
-  ">
+    <!-- LEFT IMAGE -->
+    <img src="mechanical.jpg" style="
+      position:absolute;
+      top:370px;
+      left:80px;
+      width:700px;
+      height:auto;
+      border-radius:8px;
+      border:4px solid #e8e2d8;
+    ">
 
-  <!-- RIGHT TEXT BLOCK -->
+    <!-- RIGHT TEXT BLOCK -->
     <div style="     
       position:absolute;
       top:350px;
       left:810px;
       width:600px;
       font-size:18px;
-      line-height:1.5;
+      line-height:1.7;
     ">
 
-  <p>
-    Mechanical Engineering Student UCLA <br>
-    
-  </p>
+      <p style="margin:0 0 15px 0;">
+        Mechanical Engineering Student UCLA
+      </p>
 
-  <p>
-    CAD: SolidWorks, AutoCAD, MATLAB, <br>
-    Arduino, Python
-  </p>
+      <p style="margin:0 0 15px 0;">
+        CAD: SolidWorks, AutoCAD, MATLAB,<br>
+        Arduino, Python
+      </p>
 
-  <p>
-    yosephhoang01@email.com
-  </p>
+      <p style="margin:0;">
+        yosephhoang01@email.com
+      </p>
 
-
-
-      
-
-</div>
-
-    <!-- Main title (center of page) -->
-    <h1 style="
-      position:absolute;
-      top:240px;
-      left:50%;
-      transform:translateX(-50%);   /* only center horizontally */
-      font-size:60px;
-      letter-spacing:3px;
-      white-space: nowrap;
-      color:#e8e2d8;
-">
-      PORTFOLIO – DUC HOANG
-    </h1>
+    </div>
 
   </div>
 
-
-
-<div id="projects" style="
-  width:1040px;
-  margin:0 auto;
-  background-color:#3b3b3b;
-  color:#e8e2d8;
-  padding:60px 80px;
-">
-  <h2 style="
-    font-size:44px;
-    letter-spacing:3px;
+  <!-- PROJECTS SECTION -->
+  <div id="projects" style="
+    width:1040px;
+    margin:40px auto 0 auto;
+    background-color:#3b3b3b;
+    color:#e8e2d8;
+    padding:50px 80px;
   ">
-    PROJECTS
-  </h2>
 
-  <p style="font-size:20px;">
-    Projects will be updated here soon.
-  </p>
-</div>
+    <h2 style="
+      font-size:44px;
+      letter-spacing:3px;
+      margin:0 0 20px 0;
+    ">
+      PROJECTS
+    </h2>
+
+    <p style="
+      font-size:20px;
+      margin:0;
+      line-height:1.6;
+    ">
+      Projects will be updated here soon.
+    </p>
+
+  </div>
 
 </body>
 </html>
