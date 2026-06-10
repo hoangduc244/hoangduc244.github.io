@@ -1,115 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Duc Hoang Portfolio</title>
-
-<style>
-  body {
-    margin: 0;
-    background-color: black;
-    font-family: Georgia;
-  }
-
-  .container {
-    width: 1200px;
-    min-height: 900px;
-    margin: 0 auto;
-    background-color: #3b3b3b;
-    position: relative;
-    color: #e8e2d8;
-  }
-
-  html {
-    scroll-behavior: smooth;
-  }
-</style>
-
-</head>
-
-<body>
-
-  <div class="container">
-
-    <!-- Profile picture -->
-    <img src="drone.jpg" style="
-      position:absolute;
-      top:30px;
-      right:60px;
-      width:240px;
-      border-radius:8px;
-      border:4px solid #e8e2d8;
-    ">
-
-    <!-- PROJECTS button -->
-    <a href="#projects" style="
-      position:absolute;
-      top:85px;
-      left:240px;
-      color:#4da6ff;
-      font-size:80px;
-      font-weight:bold;
-      text-decoration:underline;
-      letter-spacing:2px;
-    ">
-      PROJECTS
-    </a>
-
-    <!-- Main title -->
-    <h1 style="
-      position:absolute;
-      top:285px;
-      left:50%;
-      transform:translateX(-50%);
-      font-size:56px;
-      font-weight:400;
-      letter-spacing:5px;
-      white-space: nowrap;
-      color:#d6d0c5;
-      font-family: Georgia, serif;
-      margin:0;
-      line-height:1.2;
-    ">
-      PORTFOLIO – DUC HOANG
-    </h1>
-
-    <!-- LEFT IMAGE -->
-    <img src="mechanical.jpg" style="
-      position:absolute;
-      top:370px;
-      left:80px;
-      width:700px;
-      height:auto;
-      border-radius:8px;
-      border:4px solid #e8e2d8;
-    ">
-
-    <!-- RIGHT TEXT BLOCK -->
-    <div style="     
-      position:absolute;
-      top:369px;
-      left:810px;
-      width:600px;
-      font-size:18px;
-      line-height:1.7;
-    ">
-
-      <p style="margin:0 0 15px 0;">
-        Mechanical Engineering Student UCLA
-      </p>
-
-      <p style="margin:0 0 15px 0;">
-        CAD: SolidWorks, AutoCAD, MATLAB,<br>
-        Arduino, Python
-      </p>
-
-      <p style="margin:0;">
-        yosephhoang01@email.com
-      </p>
-
-    </div>
-
-  </div>
-
 <!-- PROJECTS SECTION -->
 <div id="projects" style="
   width:1040px;
@@ -127,7 +15,62 @@
     PROJECTS
   </h2>
 
-  <!-- PROJECT ROW -->
+  <!-- ROVER PROJECT ROW -->
+  <div style="
+    display:flex;
+    gap:40px;
+    align-items:flex-start;
+    margin-bottom:70px;
+  ">
+
+    <!-- LEFT TEXT -->
+    <div style="
+      width:50%;
+      font-size:18px;
+      line-height:1.6;
+    ">
+
+      <h3 style="font-size:28px; margin:0 0 20px 0;">
+        Rover Robot
+      </h3>
+
+      <p style="margin:0 0 15px 0;">
+        <b>Overview:</b> Designed and built a rover robot using an Arduino-based control system for motion, vertical lifting, and object gripping.
+      </p>
+
+      <p style="margin:0 0 15px 0;">
+        <b>My Role:</b> Programmed and integrated two encoder DC motors for driving, a stepper motor for vertical movement, and a servo motor for the gripper.
+      </p>
+
+      <p style="margin:0 0 15px 0;">
+        <b>Sensors:</b> LiDAR, camera, IMU, and GPS/camera-based localization from the ceiling.
+      </p>
+
+      <p style="margin:0 0 15px 0;">
+        <b>Tools:</b> Arduino, C++, DC Encoder Motors, Stepper Motor, Servo Motor, LiDAR, Camera, IMU, GPS
+      </p>
+
+      <p style="margin:0;">
+        <b>Result:</b> Developed a functional rover platform capable of controlled movement, vertical lifting, and gripping objects using sensor-assisted navigation.
+      </p>
+
+    </div>
+
+    <!-- RIGHT VIDEO -->
+    <div style="width:50%;">
+      <video controls style="
+        width:100%;
+        border-radius:8px;
+        border:4px solid #e8e2d8;
+      ">
+        <source src="rover.MOV" type="video/quicktime">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+  </div>
+
+  <!-- WALKING ROBOT PROJECT ROW -->
   <div style="
     display:flex;
     gap:40px;
@@ -171,6 +114,7 @@
         border:4px solid #e8e2d8;
       ">
         <source src="walking-robot.mp4" type="video/mp4">
+        Your browser does not support the video tag.
       </video>
     </div>
 
